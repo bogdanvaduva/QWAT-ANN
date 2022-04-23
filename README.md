@@ -1,5 +1,10 @@
 # QWAT-ANN
 
+The QWAT databases hold information about leaks and the pipes where those leaks occured. Having that information within the database an easy improvment that can be done it is to use neural networks (AI) to determin patterns about places where leaks could appear. 
+First step it is to prepare the data to be neural networks friendly. To do that a materialized view using the stored procedures found here it is neccessary.
+
+The materialized view is created every day around midnight. (Will hold millions of records)
+
 Crontab
 
 DROP MATERIALIZED VIEW IF EXISTS vw_prediction; SELECT fn_prediction_create_view('vw_prediction'::text, %start_year%, extract(year from now())::integer);
