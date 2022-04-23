@@ -6,5 +6,5 @@ DROP MATERIALIZED VIEW IF EXISTS vw_prediction; SELECT fn_prediction_create_view
 
 
 
-![Example of how it's used in an application](https://github.com/bogdanvaduva/QWAT-ANN/blob/main/media1.mp4)
+![Example of how it's used in an application](https://github.com/bogdanvaduva/QWAT-ANN/blob/main/prediction.gif)
 
