@@ -4,5 +4,5 @@ Crontab
 
 DROP MATERIALIZED VIEW IF EXISTS vw_prediction; SELECT fn_prediction_create_view('vw_prediction'::text, %start_year%, extract(year from now())::integer);
 
+![Example of how it's used in an application](https://github.com/bogdanvaduva/QWAT-ANN/media1.mp4)
 
-<embed src="media1.mp4" autostart="false" height="500" width="800" />
